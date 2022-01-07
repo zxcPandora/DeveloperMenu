@@ -1,0 +1,6 @@
+{
+	"Name" : "Developer Mode",
+	"Description" : "Allow you enable developer mode without error(didn't fix the camping)",
+	"Version": "1.0.0",
+	"LoadPriority": 2,
+}
