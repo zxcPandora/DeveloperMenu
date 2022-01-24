@@ -1307,7 +1307,7 @@ void function InitItems()
 		#endif
 
 		#if DEV && ( SERVER || CLIENT )
-			//PrecacheWeapon( "weapon_cubemap" )
+			PrecacheWeapon( "weapon_cubemap" )
 		#endif
 
 		#if CLIENT
