@@ -4451,16 +4451,16 @@ void function UpdateFriendlyHighlight()
 	int team=player0.GetTeam()
 	if ( friendlyHighlightEnabled )
 	{
-		foreach ( npc in GetNPCArrayOfTeam( team ) )
+		foreach (entity npc in GetNPCArrayOfTeam( team ) )
 			Highlight_SetFriendlyHighlight( npc, "sp_friendly_pilot" )
-		foreach ( player in GetPlayerArrayOfTeam( team ) )
+		foreach (entity player in GetPlayerArrayOfTeam( team ) )
 			Highlight_SetFriendlyHighlight( player, "sp_friendly_pilot" )
 	}
 	else
 	{
-		foreach ( npc in GetNPCArrayOfTeam( team ) )
+		foreach (entity npc in GetNPCArrayOfTeam( team ) )
 			Highlight_ClearFriendlyHighlight( npc )
-		foreach ( player in GetPlayerArrayOfTeam( team ) )
+		foreach (entity player in GetPlayerArrayOfTeam( team ) )
 			Highlight_ClearFriendlyHighlight( player )
 	}
 }
@@ -4479,6 +4479,17 @@ void function ToggleHud()
 	} else
 	{
 			AddCinematicFlag( player, flagsForHudVisibilityControl )
+	}
+}
+void function GodMode(){
+	entity player = GetPlayerArray()[0]
+	
+	if( IsDemigod( player ) )
+	{
+		DisableDemigod( player );
+	}
+	else{
+		EnableDemigod( player )	
 	}
 }
 #endif

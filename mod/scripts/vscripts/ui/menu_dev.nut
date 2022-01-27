@@ -170,9 +170,11 @@ void function SetupDefaultDevCommands()
 
 	SetupDevCommand( "Disable NPCs", "script disable_npcs()" )
 	SetupDevCommand( "Disable New NPCs", "script disable_new_npcs()" )
+	SetupDevCommand( "God Mode", "script GodMode()" )
 
 	if ( IsMultiplayer() )
 	{
+		
 		SetupDevCommand( "Swap the teams", "script teamswap()" )
 		SetupDevCommand( "Force time limit", "script ForceTimeLimitDone()" )
 		SetupDevCommand( "Force My Team Win", "script_client GetLocalClientPlayer().ClientCommand(\"ForceMyTeamWin\")" )
@@ -269,6 +271,7 @@ void function SetupDefaultDevCommandsMP()
 
 	SetupDevCommand( "Disable NPCs", "script disable_npcs()" )
 	SetupDevCommand( "Disable New NPCs", "script disable_new_npcs()" )
+	SetupDevCommand( "God Mode1", "script GodMode()" )
 
 	SetupDevCommand( "Swap the teams", "script teamswap()" )
 	SetupDevCommand( "Force time limit", "script ForceTimeLimitDone()" )
