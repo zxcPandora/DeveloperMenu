@@ -1,0 +1,7 @@
+{
+    "name": "DeveloperMode",
+    "version_number": "1.0.1",
+    "website_url": "https://github.com/zxcPandora/DeveloperMenu",
+    "description": "Allow you enable developer mode without error(didn't fix the camping and frontier defense)",
+    "dependencies": []
+}
