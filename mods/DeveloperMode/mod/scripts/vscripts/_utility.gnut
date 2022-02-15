@@ -3951,6 +3951,16 @@ string function ReloadScriptsInternal()
 	return ( "reloaded server scripts" )
 }
 
+void function SetGameEndTime(float seconds)
+{
+	SetServerVar( "gameEndTime", Time() + seconds )
+}
+
+void function SetRoundEndTime(float seconds)
+{
+	SetServerVar( "roundEndTime", Time() + seconds )
+}
+
 string function ReloadScripts()
 {
 	ServerCommand( "fs_report_sync_opens 0" ) // makes reload scripts slow

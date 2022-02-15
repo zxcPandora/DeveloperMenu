@@ -569,6 +569,9 @@ bool function LoadoutPropertyRequiresItemValidation( string loadoutProperty )
 	if ( loadoutProperty == "showArmBadge" )
 		return false
 
+	if ( loadoutProperty == "primarySkinIndex" || loadoutProperty == "secondarySkinIndex" || loadoutProperty == "weapon3SkinIndex")
+		return false
+
 	return true
 }
 

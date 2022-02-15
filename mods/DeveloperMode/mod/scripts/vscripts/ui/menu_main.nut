@@ -70,12 +70,6 @@ void function InitMainMenu()
 
 void function OnMainMenu_Open()
 {
-	string playerName
-	playerName = GetConVarString("name")
-
-	//Because of mod load priority is 2,player is already been auth.
-	//So we didn't need this one.
-	//SetConVarString("ns_auth_player_name",playerName)
 	Signal( uiGlobal.signalDummy, "EndOnMainMenu_Open" )
 	EndSignal( uiGlobal.signalDummy, "EndOnMainMenu_Open" )
 
