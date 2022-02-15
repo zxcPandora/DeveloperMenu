@@ -506,4 +506,3 @@ bool function PlayerEarnMeter_Enabled()
 {
 	return file.earnMeterEnabled
 }
-#endif
